@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+		<!--Estilos-->
+			<link rel="stylesheet" type="text/css" href="./SalaDeJuegos/estilos/estilo.css">
+		<link rel="stylesheet" type="text/css" href="./SalaDeJuegos/estilos/animacion.css">
+		<!--final de Estilos-->
+			<script SRC="./SalaDeJuegos/bower_components/angular/angular.min.js" TYPE="text/javascript"></script>
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="jsPiedarPapelTijera2.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+
+		</head>
+		<body   ng-app="ppt" ng-controller="juego" ng-init="comenzar()" >
+		<div class="CajaUno animated bounceInDown">
+			
+
+			<input type="text" ng-model ="ganadas" readonly id="ganadas">
+			<input type="text" ng-model ="perdidas" readonly id="perdidas">
+			<input type="text" ng-model ="empatadas" readonly id="empatadas">
+			<form id="FormIngreso">
+				<center>
+					<img src="./SalaDeJuegos/imagenes/interrogacion.jpg" ng-Click="comenzar()" >
+				</center>
+				
+			</form>
+			
+		</div>
+		<div class="CajaUno animated bounceInLeft">
+			
+
+			
+			<img class="PiedraPapelTijera animated zoomInRight " src="./SalaDeJuegos/imagenes/piedra.jpg" ng-Click="piedra()">
+			<img class="PiedraPapelTijera animated zoomInUp" src="./SalaDeJuegos/imagenes/papel.jpg" ng-Click="papel()">
+			<img class="PiedraPapelTijera animated zoomInLeft"  src="./SalaDeJuegos/imagenes/tijera.jpg" ng-Click="tijera()">
+		
+
+			
+
+
+		</div>
+
+		<div class="CajaEnunciado animated bounceInLeft">
+			<h2>Enunciado:</h2>
+			
+				<h3>
+						3.	Piedra, Papel o Tijera (v 2.0):
+						</br>	Ahora debemos informar cuantas veces se ganó, perdió o empató desde la última recarga de página
+
+				</h3>
+			
+			
+		</div>
+
+		<div class="CajaAbajo animated bounceInUp">
+			<a style=" margin-top: -10%;" class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+		</div>
+	</body>
+</html>

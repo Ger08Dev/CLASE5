@@ -1,0 +1,48 @@
+*
+input.ng-invalid {
+    background-color: red;
+}
+
+
+input[type="text"],input[type="email"],input[type="password"]{
+ display: inline-block;
+  color:black;
+  height: 2em;
+  width: 30%;
+  left: 10px;
+   border: solid;
+ 
+}
+
+
+input[type="checkbox"]{
+vertical-align: center;
+}
+.container
+{
+
+	margin: 0 auto;
+	vertical-align: center;
+}
+body{
+	 background-image: url("../imagenes/i_background.jpg");
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Ingreso {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+span{
+	color:white;
+}

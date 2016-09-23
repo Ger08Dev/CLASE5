@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+		<!--Estilos-->
+			<link rel="stylesheet" type="text/css" href="./SalaDeJuegos/estilos/estilo.css">
+		<link rel="stylesheet" type="text/css" href="./SalaDeJuegos/estilos/animacion.css">
+		<!--final de Estilos-->
+			<script SRC="bower_components/angular/angular.min.js" TYPE="text/javascript"></script>
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="jsPiedarPapelTijera1.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+
+		</head>
+	
+		<body   ng-app="ppt" ng-controller="juego" ng-init="comenzar()" >
+
+		
+
+		<div class="CajaUno animated bounceInDown">
+			
+		
+			<form id="FormIngreso">
+				<center>
+					<img src="./SalaDeJuegos/imagenes/interrogacion.jpg" >
+								<input type ="text" readonly="" ng-model="resultado"> 
+
+				</center>
+				
+			</form>
+			
+		</div>
+		<div class="CajaUno animated bounceInLeft">
+			
+
+			
+			<img class="PiedraPapelTijera animated zoomInRight " src="./SalaDeJuegos/imagenes/piedra.jpg" ng-Click="piedra()">
+			<img class="PiedraPapelTijera animated zoomInUp" src="./SalaDeJuegos/imagenes/papel.jpg" ng-Click="papel()">
+			<img class="PiedraPapelTijera animated zoomInLeft"  src="./SalaDeJuegos/imagenes/tijera.jpg" ng-Click="tijera()">
+			
+			
+
+			
+
+
+		</div>
+
+
+		<div class="CajaEnunciado animated bounceInLeft">
+			<h2>Enunciado:</h2>
+			
+				<h3>
+						3.	Piedra, Papel o Tijera (v 1.0):
+						</br>Al comenzar el juego generaremos un número RANDOM del 1 al 3 para la selección de la máquina, siendo 1 para “piedra”, el 2 para “papel” y 3 para “tijera”.
+						</br>El jugador seleccionará una imagen correspondiente a su opción  y le informaremos si ganó, empató o perdió
+
+
+				</h3>
+			
+			
+		</div>
+
+		<div class="CajaAbajo animated bounceInUp">
+			<a style=" margin-top: -10%;"  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+		</div>
+	</body>
+</html>

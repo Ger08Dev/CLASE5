@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script SRC="bower_components/angular/angular.min.js" TYPE="text/javascript"></script>
+    <script SRC="js/app.js" TYPE="text/javascript"></script>
+
+
+  <title>LOGIN ANGULAR</title>
+  <link rel="stylesheet" href="./formularios/LoginAngular/css/style.css"></head>
+<center> <h1><font color="red">FORMULARIO LOGIN</font></h1>   </center>  
+<body ng-app="ABMangularPHP" ng-controller="controlAlta">
+            <div class="container"  align= "center" name="divLogeo" id="divLogueo"  >
+ 
+
+  <form name="formIngreso" id="formIngreso" enctype="multipart/form-data" >
+
+  <input type="checkbox" ng-model="ver">
+<span>{{ver}}</span>
+        <p>
+        <input type="text" value="" placeholder="ingrese nombre" ng-model="persona.nombre" required />
+        </p>
+
+        <p>
+        <input type="text" value="" placeholder="ingrese apellido" ng-model="persona.apellido" required />
+        </p> 
+        <p>
+        <input type="text" value="" style="text-transform:uppercase;" placeholder="ingrese sexo" ng-model="persona.sexo" maxlength="2"  pattern="[M,F]{1}" required />
+        </p>
+
+        <p>
+        <input type="number" value="" placeholder="ingrese edad" ng-model="persona.edad" min="18" max="19" required />
+        </p>
+         <p>
+        <input type="number" value="" placeholder="ingrese dni" ng-model="persona.dni" required />
+        </p>
+
+       <p>
+       <select>
+         <option>CASADO</option>
+         <OPTION>SOLTERO</OPTION>
+
+       </select>
+        </p>
+
+        <p>
+        <input type="date" value="" placeholder="ingrese fecha de nacimiento" ng-model="persona.fecha" required />
+        </p>
+
+         <p>
+        <input type="email" value="" placeholder="ingrese correo" ng-model="persona.email" required />
+        </p>
+
+         <p>
+        <input type="password" value="" placeholder="ingrese password" ng-model="persona.password" required  />
+        </p>
+
+        <p>
+          <input type="password" value="" placeholder="ingrese password" ng-model="persona.repetirpassword" required  />
+        </p>
+
+          <p>
+          <input type="checkbox"  ng-model="persona.lenguaje" required  /><font color="white">PROGRAMACION 3</font>
+        </p>
+
+
+        <input type="button" id="Ingreso" ng-disabled='formIngreso.$invalid' class="button" ng-Click="Logueo('datos.html')" name="Ingreso" value="ingreso" />
+        </div>
+
+        </form>
+     
+    </div>
+
+ 
+  </section>
+
+</body>
+</html>
